@@ -1,0 +1,32 @@
+<p>Componente Elementos</p>
+
+¿Tienes hambre?
+<input type="checkbox" name="nCheck1" checked />
+<br><br>
+
+¿Tienes hambre?
+<input type="checkbox" name="nCheck2" [checked]="tenerHambre" [checked]="deshabilitarCheck"/>
+
+<br><br>
+¿Tienes hambre?
+<input type="checkbox" name="nCheck3" (click)="heHechoClick()"/>
+
+<br><br>
+¿Tienes hambre?
+<input type="checkbox" name="nCheck4" (click)="verSiTengoHambre($event)"/>
+{{ textoHambre }}
+
+<br><br>
+¿Crees que vas a aprobar DWEC?
+<br>
+SI <input type="radio" name="nRadio" value="si" (click)="verSiApruebo($event)">
+<br>
+NO <input type="radio" name="nRadio" value="no" (click)="verSiApruebo($event)">
+<br>
+{{ textoAprobar }}
+
+<br><br>
+¿Qué vas a hacer este finde?
+<input type="text" (input)="planearesteFinde($event)" />
+<br>
+Este finde voy a {{esteFinde}}.
